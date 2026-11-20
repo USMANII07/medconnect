@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a1b36">
+    <title>Customer Dashboard | MedConnect</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="dashboard-page customer-dashboard-page" data-dashboard-role="Customer">
+    <aside class="customer-sidebar" id="customerSidebar" aria-label="Customer navigation">
+        <a class="customer-brand" href="#customerHome" aria-label="MedConnect dashboard">
+            <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M17 5h6v12h12v6H23v12h-6V23H5v-6h12z"/></svg></span>
+            <span>Med<span>Connect</span><small>PHARMACY CARE</small></span>
+        </a>
+        <p class="sidebar-label">MENU</p>
+        <nav class="customer-nav">
+            <a class="customer-nav-link active" href="#customerHome" data-customer-nav="customerHome"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg><span>Dashboard</span></a>
+            <a class="customer-nav-link" href="#my-orders" data-customer-nav="my-orders"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14v18l-2-1-2 1-3-1-3 1-2-1-2 1zm4 5h6m-6 4h7m-7 4h5"/></svg><span>My Orders</span></a>
+            <a class="customer-nav-link" href="#medicineResults" data-customer-nav="medicineResults"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 4v6m10-6v6M5 12h14l-1 8H6zM9 16h6"/></svg><span>Compare Prices</span></a>
+            <a class="customer-nav-link" href="#my-profile" data-customer-nav="my-profile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>My Profile</span></a>
+        </nav>
+        <div class="sidebar-help"><span class="help-icon" aria-hidden="true">+</span><strong>Care made simpler</strong><p>Find the medicine you need and compare local listings.</p><a href="#medicineSearch">Search medicines <span aria-hidden="true">→</span></a></div>
+        <button class="customer-nav-link sidebar-logout" type="button" data-logout><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5m4-4 4-4-4-4m4 4H9"/></svg><span>Log out</span></button>
+    </aside>
+
+    <div class="customer-app-shell">
+        <header class="customer-topbar">
+            <button class="mobile-menu-button" id="mobileMenuButton" type="button" aria-label="Open navigation" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+            <div class="topbar-copy"><span>Customer portal</span><strong>Health care, made easier</strong></div>
+            <div class="topbar-actions">
+                <div class="notification-wrap">
+                    <button class="topbar-icon-button" id="notificationToggle" type="button" aria-label="Notifications" aria-expanded="false" aria-controls="notificationPopover"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9m-8 12h4"/></svg><span class="notification-dot" id="notificationDot" hidden></span></button>
+                    <section class="notification-popover" id="notificationPopover" hidden aria-label="Notifications"><div class="popover-heading"><strong>Notifications</strong><span>Updates for you</span></div><div id="myNotifications"><p class="dashboard-muted">Loading notifications…</p></div></section>
+                </div>
+                <div class="profile-menu-wrap">
+                    <button class="topbar-profile" id="profileToggle" type="button" aria-expanded="false" aria-controls="profilePopover"><span class="customer-avatar" id="customerAvatar">MC</span><span class="topbar-profile-copy"><small>Welcome back</small><strong id="dashboardUser">Customer</strong></span><svg class="chevron-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></button>
+                    <div class="profile-popover" id="profilePopover" hidden><a href="#my-profile">My profile</a><button type="button" data-logout>Log out</button></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="customer-main" id="customerHome">
+            <section class="customer-hero" aria-labelledby="customerGreeting">
+                <div class="customer-hero-copy">
+                    <span class="hero-eyebrow"><span></span> YOUR HEALTH, ONE SEARCH AWAY</span>
+                    <h1 id="customerGreeting">Welcome to <span>MedConnect</span></h1>
+                    <p>Search medicines and compare prices across trusted pharmacies.</p>
+                    <form class="customer-search-form" id="medicineSearchForm" novalidate>
+                        <label class="sr-only" for="medicineSearch">Medicine name</label>
+                        <svg class="search-field-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
+                        <input id="medicineSearch" name="search" type="search" autocomplete="off" placeholder="Search medicine name, brand or generic…" aria-describedby="customerMessage">
+                        <button class="search-clear-button" id="clearMedicineSearch" type="button" aria-label="Clear search" title="Clear search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+                        <button class="customer-search-button" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><span>Search</span></button>
+                    </form>
+                    <div class="search-filter-row">
+                        <label for="medicineAvailability">Availability
+                            <select id="medicineAvailability" name="availability"><option value="all">Any stock status</option><option value="available">Available only</option><option value="out-of-stock">Out of stock / expired</option></select>
+                        </label>
+                        <label for="medicineCategory">Category
+                            <select id="medicineCategory" name="category"><option value="">All categories</option></select>
+                        </label>
+                    </div>
+                    <p class="form-message dashboard-message customer-search-message" id="customerMessage" role="status" aria-live="polite"></p>
+                    <div class="popular-searches"><span>Popular:</span><button type="button" data-popular-search="Panadol">Panadol</button><button type="button" data-popular-search="Brufen">Brufen</button><button type="button" data-popular-search="Augmentin">Augmentin</button><button type="button" data-popular-search="Rigix">Rigix</button><button type="button" data-popular-search="Flagyl">Flagyl</button></div>
+                </div>
+                <div class="hero-art" aria-hidden="true">
+                    <div class="hero-art-glow"></div><div class="hero-art-orbit orbit-one"></div><div class="hero-art-orbit orbit-two"></div>
+                    <svg class="medical-illustration" viewBox="0 0 420 330" role="img"><defs><linearGradient id="crossGrad" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#50d9ff"/><stop offset="1" stop-color="#2b8cff"/></linearGradient><linearGradient id="pillGrad" x1="0" x2="1"><stop stop-color="#f8fdff"/><stop offset="1" stop-color="#91e4ff"/></linearGradient></defs>
+                        <circle cx="209" cy="165" r="132" fill="#ffffff" fill-opacity=".045" stroke="#87dfff" stroke-opacity=".16"/>
+                        <circle cx="209" cy="165" r="99" fill="#ffffff" fill-opacity=".035" stroke="#8ee6ff" stroke-opacity=".22" stroke-dasharray="4 9"/>
+                        <rect x="121" y="42" width="171" height="238" rx="27" fill="#fff" fill-opacity=".13" stroke="#d6f6ff" stroke-opacity=".68" stroke-width="2" transform="rotate(-7 206 161)"/>
+                        <rect x="139" y="59" width="135" height="204" rx="18" fill="#eefaff"/>
+                        <path d="M191 76h31v40h40v31h-40v40h-31v-40h-40v-31h40z" fill="url(#crossGrad)"/>
+                        <path d="M168 219h75" stroke="#b5d6e7" stroke-width="8" stroke-linecap="round"/><path d="M180 238h50" stroke="#d0e4ef" stroke-width="6" stroke-linecap="round"/>
+                        <g transform="translate(267 190) rotate(-32)"><rect width="104" height="44" rx="22" fill="url(#pillGrad)"/><path d="M52 0v44" stroke="#54b9ea" stroke-width="3"/><path d="M22 22h16" stroke="#5aa4ce" stroke-width="4" stroke-linecap="round"/></g>
+                        <circle cx="326" cy="92" r="27" fill="#44c8ec" fill-opacity=".16" stroke="#8be9ff" stroke-opacity=".55"/><path d="M326 78v28m-14-14h28" stroke="#b7f4ff" stroke-width="5" stroke-linecap="round"/>
+                        <circle cx="92" cy="224" r="8" fill="#6ee7f9"/><circle cx="324" cy="253" r="5" fill="#77d6ff"/><circle cx="113" cy="81" r="5" fill="#77d6ff"/>
+                    </svg>
+                    <div class="hero-trust-chip"><span class="trust-check">✓</span><span><strong>Compare with confidence</strong><small>Real listings. Clear prices.</small></span></div>
+                </div>
+            </section>
+
+            <section class="customer-results-section" id="comparePrices" aria-labelledby="resultsHeading">
+                <div class="section-title-row"><div><span class="section-kicker">SMARTER MEDICINE SHOPPING</span><h2 id="resultsHeading">Search Results</h2><p>Compare pharmacy listings and find the right option for you.</p></div><span class="results-live-tag"><span></span> Live availability</span></div>
+                <div class="customer-results" id="medicineResults" aria-live="polite" aria-busy="false">
+                    <div class="search-empty-state"><div class="empty-art" aria-hidden="true"><svg viewBox="0 0 120 110"><circle cx="60" cy="55" r="48" fill="#eaf6ff"/><rect x="36" y="20" width="49" height="69" rx="10" transform="rotate(-8 60 55)" fill="#fff" stroke="#b5d9ef" stroke-width="3"/><path d="M54 36h14v14h14v14H68v14H54V64H40V50h14z" fill="#39a8e8" transform="rotate(-8 60 55)"/><circle cx="87" cy="29" r="12" fill="#d2f4eb"/><path d="m82 29 4 4 7-8" fill="none" stroke="#19a87b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Search for a Medicine</h3><p>Enter a medicine name above to see availability and compare prices.</p></div>
+                </div>
+            </section>
+
+            <section class="customer-features" aria-label="MedConnect services">
+                <article class="customer-feature-card"><span class="feature-icon feature-blue"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M6 4v6m12-6v6M5 12h14l-1 8H6zM9 16h6"/></svg></span><h3>Compare Prices</h3><p>Find the best prices across nearby pharmacy listings.</p><a href="#medicineSearch">Start comparing <span>→</span></a></article>
+                <article class="customer-feature-card"><span class="feature-icon feature-teal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><h3>Find Nearby Pharmacies</h3><p>Open a local pharmacy search in Google Maps.</p><button class="feature-text-button" id="nearbyFeatureButton" type="button">Find nearby <span>→</span></button></article>
+                <article class="customer-feature-card"><span class="feature-icon feature-purple"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v14H4zM8 3v6m8-6v6M8 13h3m2 0h3m-8 4h3m2 0h3"/></svg></span><h3>Check Availability</h3><p>See current stock status before choosing a listing.</p><a href="#medicineResults">View search results <span>→</span></a></article>
+                <article class="customer-feature-card"><span class="feature-icon feature-orange"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9h-9zM15 3.5V9h5.5A9 9 0 0 0 15 3.5Z"/><path d="M8 13h8m-4-4v8"/></svg></span><h3>24/7 Support</h3><p>MedConnect helps you browse medicine listings with clarity.</p><span class="feature-static-note">Here to help you search</span></article>
+            </section>
+
+            <section class="nearby-pharmacy-panel" id="nearby-pharmacies">
+                <div><span class="section-kicker">AROUND YOU</span><h2>Find a nearby pharmacy</h2><p>Open Google Maps to see pharmacy search results near you.</p><p class="nearby-privacy-note">Google Maps handles your location and may ask for permission. MedConnect does not request or store your location for this search.</p><p class="form-message dashboard-message" id="mapMessage" role="status" aria-live="polite"></p></div>
+                <button class="nearby-button" id="findNearby" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Find Pharmacies Near Me</button>
+            </section>
+        </main>
+        <footer class="customer-footer"><span>© MedConnect</span><span>Medicine information and availability are provided by participating pharmacies.</span></footer>
+    </div>
+    <button class="sidebar-scrim page-scrim" id="sidebarPageScrim" type="button" tabindex="-1" aria-hidden="true"></button>
+    <script src="../dashboard.js?v=customer-dashboard-redesign-1"></script>
+</body>
+</html>

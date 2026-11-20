@@ -1,0 +1,154 @@
+[
+  {
+    "id": "MC-1795021081492-wncdwkf",
+    "customerId": "1794901354289",
+    "customer": {
+      "name": "usman",
+      "email": "usman@gmail.com",
+      "phone": "03351230501"
+    },
+    "pharmacyId": "1794901902225-j9e3o4",
+    "pharmacy": {
+      "name": "devago",
+      "address": "defence view phase 1",
+      "city": "Karachi",
+      "phone": "03351230501"
+    },
+    "items": [
+      {
+        "medicineId": "1794901968158-ka1wfn",
+        "name": "pandol",
+        "strength": "10mg",
+        "quantity": 1,
+        "unitPrice": 50,
+        "lineTotal": 50
+      }
+    ],
+    "address": "defence view phase1",
+    "subtotal": 50,
+    "deliveryCharge": 100,
+    "discount": 0,
+    "total": 150,
+    "status": "Pending",
+    "paymentId": null,
+    "stockDeducted": false,
+    "createdAt": "2026-11-18T16:58:01.492Z",
+    "updatedAt": "2026-11-18T16:58:01.492Z"
+  },
+  {
+    "id": "MC-1795022290962-aet4nf4",
+    "customerId": "1794901354289",
+    "customer": {
+      "name": "usman",
+      "email": "usman@gmail.com",
+      "phone": "03351230501"
+    },
+    "pharmacyId": "1794901902225-j9e3o4",
+    "pharmacy": {
+      "name": "devago",
+      "address": "defence view phase 1",
+      "city": "Karachi",
+      "phone": "03351230501"
+    },
+    "items": [
+      {
+        "medicineId": "1794901968158-ka1wfn",
+        "name": "pandol",
+        "strength": "10mg",
+        "quantity": 6,
+        "unitPrice": 50,
+        "lineTotal": 300
+      }
+    ],
+    "address": "defence view phase1",
+    "subtotal": 300,
+    "deliveryCharge": 100,
+    "discount": 0,
+    "total": 400,
+    "status": "Confirmed",
+    "paymentId": null,
+    "stockDeducted": false,
+    "createdAt": "2026-11-18T17:18:10.962Z",
+    "updatedAt": "2026-11-19T06:09:19.220Z"
+  },
+  {
+    "id": "MC-1795177798563-s56uxgo",
+    "customerId": "1794901354289",
+    "customer": {
+      "name": "usman",
+      "email": "usman@gmail.com",
+      "phone": "03351230501"
+    },
+    "pharmacyId": "PH002",
+    "pharmacy": {
+      "name": "Health Plus Pharmacy",
+      "address": "Johar, Karachi",
+      "city": "Karachi",
+      "phone": "0301-2223344"
+    },
+    "items": [
+      {
+        "medicineId": "INV-PH002-MED039",
+        "name": "Betnovate",
+        "strength": "Cream",
+        "quantity": 1,
+        "unitPrice": 90,
+        "lineTotal": 90
+      },
+      {
+        "medicineId": "INV-PH002-MED015",
+        "name": "Loratadine",
+        "strength": "10mg",
+        "quantity": 1,
+        "unitPrice": 344,
+        "lineTotal": 344
+      }
+    ],
+    "address": "defence view phase1",
+    "subtotal": 434,
+    "deliveryCharge": 100,
+    "discount": 0,
+    "total": 534,
+    "status": "Pending",
+    "paymentId": null,
+    "stockDeducted": false,
+    "createdAt": "2026-11-20T12:29:58.562Z",
+    "updatedAt": "2026-11-20T12:29:58.562Z"
+  },
+  {
+    "id": "MC-1795183693319-ouw0hio",
+    "customerId": "1794901354289",
+    "customer": {
+      "name": "usman",
+      "email": "usman@gmail.com",
+      "phone": "9999999999"
+    },
+    "pharmacyId": "PH-DEMO-1CE9668D72",
+    "pharmacy": {
+      "name": "salim pharmacy",
+      "address": "salim habib university",
+      "city": "karachi",
+      "phone": "000000000000000"
+    },
+    "items": [
+      {
+        "medicineId": "INV-1795179796475-mx37ga",
+        "name": "brufin",
+        "strength": "",
+        "quantity": 10,
+        "unitPrice": 80,
+        "lineTotal": 800
+      }
+    ],
+    "address": "salim habib university",
+    "subtotal": 800,
+    "deliveryCharge": 100,
+    "discount": 0,
+    "total": 900,
+    "status": "Pending",
+    "paymentId": null,
+    "stockDeducted": false,
+    "createdAt": "2026-11-20T14:08:13.318Z",
+    "updatedAt": "2026-11-20T14:08:13.318Z"
+  }
+]

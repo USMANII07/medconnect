@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | MedConnect</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="signup-page">
+    <header class="header">
+        <a class="logo signup-header" href="../index.html">
+            <span class="logo-icon" aria-hidden="true">✚</span>
+            <span>MedConnect</span>
+        </a>
+        <div class="header-buttons">
+            <a class="nav-login" href="../index.html">Home</a>
+        </div>
+    </header>
+
+    <main class="signup-main">
+        <section class="signup-card" aria-labelledby="signupTitle">
+            <span class="section-tag">JOIN MEDCONNECT</span>
+            <h1 id="signupTitle">Create your account</h1>
+            <p class="signup-intro">Register to get started with MedConnect.</p>
+
+            <form class="signup-form" id="signupForm">
+                <label for="name">Full name
+                    <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required>
+                </label>
+
+                <label for="email">Email address
+                    <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+                </label>
+
+                <label for="role">Account type
+                    <select id="role" name="role" required>
+                        <option value="" selected disabled>Select an account type</option>
+                        <option value="Customer">Customer</option>
+                        <option value="Pharmacist">Pharmacist</option>
+                    </select>
+                </label>
+
+                <label for="password">Password
+                    <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required>
+                </label>
+
+                <label for="confirmPassword">Confirm password
+                    <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" required>
+                </label>
+
+                <p class="form-message" id="signupMessage" role="status" aria-live="polite"></p>
+                <button class="signup-submit" id="signupSubmit" type="submit">Create Account</button>
+            </form>
+
+            <p class="signup-footer">Already registered? <a href="./login.html">Log in</a></p>
+            <p class="signup-footer"><a href="../index.html">Back to MedConnect home</a></p>
+        </section>
+    </main>
+
+    <script src="../main.js"></script>
+</body>
+</html>

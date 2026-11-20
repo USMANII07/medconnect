@@ -1,0 +1,26 @@
+[
+  {
+    "id": "STK-1795179717016-o2vr9e",
+    "inventoryId": "INV-1795179717015-mhvy0m",
+    "medicineId": "MED-CUSTOM-1795179717008-moi7v",
+    "pharmacyId": "PH-DEMO-1CE9668D72",
+    "userId": "76d95163-a6b7-4cfe-af4b-e4c2d75d1304",
+    "type": "initial-stock",
+    "quantityChange": 40,
+    "quantityBefore": 0,
+    "quantityAfter": 40,
+    "createdAt": "2026-11-20T13:01:57.015Z"
+  },
+  {
+    "id": "STK-1795179796476-yxhrsm",
+    "inventoryId": "INV-1795179796475-mx37ga",
+    "medicineId": "MED-CUSTOM-1795179796468-9eb6n",
+    "pharmacyId": "PH-DEMO-1CE9668D72",
+    "userId": "76d95163-a6b7-4cfe-af4b-e4c2d75d1304",
+    "type": "initial-stock",
+    "quantityChange": 40,
+    "quantityBefore": 0,
+    "quantityAfter": 40,
+    "createdAt": "2026-11-20T13:03:16.475Z"
+  }
+]

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacist Dashboard | MedConnect</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="dashboard-page" data-dashboard-role="Pharmacist">
+    <header class="header dashboard-header">
+        <a class="logo" href="../index.html"><span class="logo-icon" aria-hidden="true">✚</span><span>MedConnect</span></a>
+        <div class="header-buttons">
+            <span class="dashboard-muted" id="dashboardUser"></span>
+            <button class="nav-signup" type="button" data-logout>Log out</button>
+        </div>
+    </header>
+    <main class="dashboard-main">
+        <section class="dashboard-heading">
+            <span class="section-tag">PHARMACIST DASHBOARD</span>
+            <h1>Pharmacy and inventory</h1>
+            <p>Manage your pharmacy profile, medicine stock, prices, and expiry dates.</p>
+        </section>
+
+        <section class="dashboard-panel" id="pharmacyPanel">
+            <h2>Your pharmacy</h2>
+            <div id="pharmacyDetails" class="dashboard-muted"></div>
+            <form class="dashboard-form" id="pharmacyForm" hidden>
+                <p class="dashboard-muted full-width">Create a pharmacy profile to start managing its inventory.</p>
+                <label for="pharmacyName">Pharmacy name
+                    <input id="pharmacyName" name="name" required maxlength="120">
+                </label>
+                <label for="pharmacyPhone">Phone
+                    <input id="pharmacyPhone" name="phone" type="tel">
+                </label>
+                <label for="pharmacyAddress">Street address
+                    <input id="pharmacyAddress" name="address" required>
+                </label>
+                <label for="pharmacyCity">City
+                    <input id="pharmacyCity" name="city" required>
+                </label>
+                <label class="full-width" for="pharmacyLocation">Map location or coordinates
+                    <input id="pharmacyLocation" name="location" placeholder="e.g. 24.8431, 67.0700 or directions">
+                    <small class="dashboard-muted" style="display:block;margin-top:4px;">Optional: Enter latitude and longitude coordinates to save your pharmacy location.</small>
+                </label>
+                <p class="form-message full-width" id="pharmacyMessage" role="status" aria-live="polite"></p>
+                <button class="dashboard-action" type="submit">Save pharmacy profile</button>
+            </form>
+        </section>
+
+        <section class="dashboard-panel" id="inventoryPanel" hidden>
+            <h2>Add medicine</h2>
+            <form class="dashboard-form" id="medicineAddForm">
+                <label for="newMedicineName">Medicine name
+                    <input id="newMedicineName" name="name" required>
+                </label>
+                <label for="newMedicineStrength">Strength or size
+                    <input id="newMedicineStrength" name="strength">
+                </label>
+                <label for="newMedicineQuantity">Quantity
+                    <input id="newMedicineQuantity" name="quantity" type="number" min="0" step="1" required>
+                </label>
+                <label for="newMedicinePrice">Price (Rs.)
+                    <input id="newMedicinePrice" name="price" type="number" min="0" step="0.01" required>
+                </label>
+                <label for="newMedicineExpiry">Expiry date
+                    <input id="newMedicineExpiry" name="expiryDate" type="date" required>
+                </label>
+                <label for="newMedicineBatch">Batch number
+                    <input id="newMedicineBatch" name="batchNumber" maxlength="80">
+                </label>
+                <label for="newMedicineCost">Purchase cost per unit (Rs.)
+                    <input id="newMedicineCost" name="purchaseCost" type="number" min="0" step="0.01">
+                </label>
+                <p class="form-message full-width" id="inventoryMessage" role="status" aria-live="polite"></p>
+                <button class="dashboard-action" type="submit">Add to my inventory</button>
+            </form>
+        </section>
+        <section class="dashboard-panel" id="inventoryListPanel" hidden>
+            <h2>Inventory and alerts</h2>
+            <div class="dashboard-results" id="inventoryResults"></div>
+        </section>
+    </main>
+    <script src="../dashboard.js"></script>
+</body>
+</html>

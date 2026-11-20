@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Receipt | MedConnect</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="dashboard-page receipt-page">
+    <header class="header dashboard-header no-print">
+        <a class="logo" href="../index.html"><span class="logo-icon" aria-hidden="true">+</span><span>MedConnect</span></a>
+        <div class="header-buttons"><a class="nav-login" href="./customer-dashboard.html#myOrders">My Orders</a></div>
+    </header>
+    <main class="dashboard-main receipt-main">
+        <p class="form-message dashboard-message" id="receiptMessage" role="status" aria-live="polite">Loading your receipt...</p>
+        <article class="receipt-sheet" id="receipt" hidden></article>
+    </main>
+    <script src="../receipt.js"></script>
+</body>
+</html>

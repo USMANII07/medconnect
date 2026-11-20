@@ -1,0 +1,92 @@
+[
+  {
+    "id": "n-1795021081496-889c4gm",
+    "userId": "1794901811934",
+    "role": "Pharmacist",
+    "title": "New order received",
+    "message": "MC-1795021081492-wncdwkf requires review.",
+    "orderId": "MC-1795021081492-wncdwkf",
+    "read": false,
+    "createdAt": "2026-11-18T16:58:01.496Z"
+  },
+  {
+    "id": "n-1795022290964-qscpucy",
+    "userId": "1794901354289",
+    "role": "Customer",
+    "title": "Order successfully placed",
+    "message": "Order MC-1795022290962-aet4nf4 was sent to devago for confirmation.",
+    "orderId": "MC-1795022290962-aet4nf4",
+    "read": false,
+    "createdAt": "2026-11-18T17:18:10.964Z"
+  },
+  {
+    "id": "n-1795022290967-n0rba51",
+    "userId": "1794901811934",
+    "role": "Pharmacist",
+    "title": "New order received",
+    "message": "MC-1795022290962-aet4nf4 requires review.",
+    "orderId": "MC-1795022290962-aet4nf4",
+    "read": false,
+    "createdAt": "2026-11-18T17:18:10.967Z"
+  },
+  {
+    "id": "n-1795068559223-us5kkqx",
+    "userId": "1794901354289",
+    "role": "Customer",
+    "title": "Order confirmed",
+    "message": "Order confirmed. Demo payment is now available.",
+    "orderId": "MC-1795022290962-aet4nf4",
+    "read": false,
+    "createdAt": "2026-11-19T06:09:19.223Z"
+  },
+  {
+    "id": "n-1795068559227-i6wpebd",
+    "userId": null,
+    "role": "Admin",
+    "title": "Order activity",
+    "message": "MC-1795022290962-aet4nf4: Confirmed.",
+    "orderId": "MC-1795022290962-aet4nf4",
+    "read": false,
+    "createdAt": "2026-11-19T06:09:19.227Z"
+  },
+  {
+    "id": "n-1795177798565-lng27s4",
+    "userId": "1794901354289",
+    "role": "Customer",
+    "title": "Order successfully placed",
+    "message": "Order MC-1795177798563-s56uxgo was sent to Health Plus Pharmacy for confirmation.",
+    "orderId": "MC-1795177798563-s56uxgo",
+    "read": false,
+    "createdAt": "2026-11-20T12:29:58.565Z"
+  },
+  {
+    "id": "n-1795177798568-cnglv7i",
+    "userId": null,
+    "role": "Pharmacist",
+    "title": "New order received",
+    "message": "MC-1795177798563-s56uxgo requires review.",
+    "orderId": "MC-1795177798563-s56uxgo",
+    "read": false,
+    "createdAt": "2026-11-20T12:29:58.568Z"
+  },
+  {
+    "id": "n-1795183693323-yg39y3k",
+    "userId": "1794901354289",
+    "role": "Customer",
+    "title": "Order successfully placed",
+    "message": "Order MC-1795183693319-ouw0hio was sent to salim pharmacy for confirmation.",
+    "orderId": "MC-1795183693319-ouw0hio",
+    "read": false,
+    "createdAt": "2026-11-20T14:08:13.323Z"
+  },
+  {
+    "id": "n-1795183693332-ufs8d7c",
+    "userId": "76d95163-a6b7-4cfe-af4b-e4c2d75d1304",
+    "role": "Pharmacist",
+    "title": "New order received",
+    "message": "MC-1795183693319-ouw0hio requires review.",
+    "orderId": "MC-1795183693319-ouw0hio",
+    "read": false,
+    "createdAt": "2026-11-20T14:08:13.332Z"
+  }
+]

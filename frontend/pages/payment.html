@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Payment | MedConnect</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="dashboard-page">
+    <header class="header dashboard-header no-print">
+        <a class="logo" href="../index.html"><span class="logo-icon" aria-hidden="true">+</span><span>MedConnect</span></a>
+        <div class="header-buttons"><a class="nav-login" href="./customer-dashboard.html#myOrders">My Orders</a></div>
+    </header>
+    <main class="dashboard-main payment-main">
+        <section class="dashboard-heading"><span class="section-tag">DEMO PAYMENT SYSTEM</span><h1>Review your payment</h1><p>This clearly labelled demo system does not transfer real money or collect card details.</p></section>
+        <p id="paymentMessage" class="form-message dashboard-message" role="status" aria-live="polite">Loading order...</p>
+        <section id="paymentPanel" class="dashboard-panel" hidden>
+            <div id="paymentOrder"></div>
+            <h2>Choose a demo payment method</h2>
+            <form id="paymentForm" class="dashboard-form">
+                <label>Payment method<select name="method" required><option>Easypaisa</option><option>JazzCash</option><option>Visa</option><option>Mastercard</option></select></label>
+                <div id="paymentSummary" class="payment-summary"></div>
+                <p class="dashboard-muted full-width">DEMO PAYMENT SYSTEM — no real funds are charged. Do not enter card, PIN, CVV, or banking credentials.</p>
+                <div class="full-width payment-actions"><button id="confirmDemoPayment" class="dashboard-action" type="submit">Confirm Demo Payment</button><a class="nav-login" href="./customer-dashboard.html#myOrders">Cancel and Return to My Orders</a></div>
+            </form>
+        </section>
+    </main>
+    <script src="../receipt.js"></script>
+    <script src="../payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | MedConnect</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="dashboard-page" data-dashboard-role="Admin">
+    <header class="header dashboard-header">
+        <a class="logo" href="../index.html"><span class="logo-icon" aria-hidden="true">✚</span><span>MedConnect</span></a>
+        <div class="header-buttons">
+            <span class="dashboard-muted" id="dashboardUser"></span>
+            <button class="nav-signup" type="button" data-logout>Log out</button>
+        </div>
+    </header>
+    <main class="dashboard-main">
+        <section class="dashboard-heading">
+            <span class="section-tag">ADMIN</span>
+            <h1>System overview</h1>
+            <p>This area is available only to accounts created through the controlled admin setup process.</p>
+        </section>
+        <section class="dashboard-results" id="adminOverview" aria-live="polite"></section>
+        <p class="form-message dashboard-message" id="adminMessage" role="status" aria-live="polite"></p>
+    </main>
+    <script src="../dashboard.js"></script>
+</body>
+</html>

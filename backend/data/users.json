@@ -1,0 +1,103 @@
+[
+  {
+    "id": 1794896318992,
+    "name": "Test User",
+    "email": "test@medconnect.com"
+  },
+  {
+    "id": "1794898559744",
+    "name": "Verification Customer",
+    "email": "verify.customer.1794898559512@example.com",
+    "passwordHash": "$2b$10$MTQ78PGito2/t6y7rZUyg.Sli6UUVyF2fyTXjm5DC9ZBsb5J6MwKu",
+    "role": "Customer",
+    "createdAt": "2026-11-17T06:55:59.744Z"
+  },
+  {
+    "id": "1794898559973",
+    "name": "Verification Pharmacist",
+    "email": "verify.pharmacist.1794898559512@example.com",
+    "passwordHash": "$2b$10$K7l8/N4T2gDVR2qgIl3LEeaWz0oLbM4eela6g/UEeeUyUDvvMFjke",
+    "role": "Pharmacist",
+    "createdAt": "2026-11-17T06:55:59.973Z"
+  },
+  {
+    "id": "1794898766135",
+    "name": "Usman",
+    "email": "usman3@example.com",
+    "passwordHash": "$2b$10$FzGz13FUFEx/n3HPDId/xOhDqyqhJ9XWjyltng3GAxlK2LG1NF4v2",
+    "role": "Customer",
+    "createdAt": "2026-11-17T06:59:26.135Z"
+  },
+  {
+    "id": "1794899254267",
+    "name": "Test",
+    "email": "crosstest@example.com",
+    "passwordHash": "$2b$10$1nqfZ6ozk6ozwrIuH59N/OpqiBPpdBj22MkS.szIWlnAAy4wCV5G2",
+    "role": "Customer",
+    "createdAt": "2026-11-17T07:07:34.267Z"
+  },
+  {
+    "id": "1794899304621",
+    "name": "Browser Customer",
+    "email": "browser.customer.1794899304436@example.com",
+    "passwordHash": "$2b$10$rT0/0rRkPZHec03rWxtB4eBm0cfMfLeZzu3cG2qmYTjB/nTAQW5xu",
+    "role": "Customer",
+    "createdAt": "2026-11-17T07:08:24.621Z"
+  },
+  {
+    "id": "1794899304798",
+    "name": "Browser Pharmacist",
+    "email": "browser.pharmacist.1794899304436@example.com",
+    "passwordHash": "$2b$10$wylaURPHzYnHhAOSNW5WSeS5xpuxGR99JQjKsD6v2FMIJheInlSxO",
+    "role": "Pharmacist",
+    "createdAt": "2026-11-17T07:08:24.798Z"
+  },
+  {
+    "id": "1794901354289",
+    "name": "usman",
+    "email": "usman@gmail.com",
+    "passwordHash": "$2b$10$PaPFXpevrodWcH3Zyf7aEectW88zsuqe7j.zvnumwUXgYgbbXS8ni",
+    "role": "Customer",
+    "createdAt": "2026-11-17T07:42:34.289Z"
+  },
+  {
+    "id": "1794901811934",
+    "name": "hammad",
+    "email": "hassumed@gmail.com",
+    "passwordHash": "$2b$10$udwl6QqlHQAoKiMkDTxmFekfNK1wM/gyOdZICOfkLiTJ7L0a5CXdi",
+    "role": "Pharmacist",
+    "createdAt": "2026-11-17T07:50:11.934Z",
+    "pharmacyId": "1794901902225-j9e3o4"
+  },
+  {
+    "id": "c1f56679-b633-4ed0-9481-e5eb37ed5851",
+    "name": "MedConnect Demo Customer",
+    "email": "demo.customer.1ce9668d72@medconnect.test",
+    "passwordHash": "$2b$12$17FlmQ9G1rSRPnlv2jQQZuZmyim/MnV/8cR9l0rwzA7jp8F1IaM26",
+    "role": "Customer",
+    "active": true,
+    "demoAccount": true,
+    "createdAt": "2026-11-20T12:32:43.506Z"
+  },
+  {
+    "id": "76d95163-a6b7-4cfe-af4b-e4c2d75d1304",
+    "name": "davegopharmacy@gmail.com",
+    "email": "davegopharmacy@gmail.com",
+    "passwordHash": "$2b$12$BKTrkR3mvItsKgmjsWrcZOXLRaE9sGNH/gN2oT/3QPZ54c4rUuhga",
+    "role": "Pharmacist",
+    "active": true,
+    "demoAccount": true,
+    "createdAt": "2026-11-20T12:32:43.787Z",
+    "pharmacyId": "PH-DEMO-1CE9668D72"
+  },
+  {
+    "id": "22f4cbe3-e957-4ce3-9676-7208f0103445",
+    "name": "admin",
+    "email": "admin@gmail.com",
+    "passwordHash": "$2b$12$VGNHZTOYfHEYw.w9/2tEFO11GpAfu0yMDdOiPpPfTXwE7Xog5p.7a",
+    "role": "Admin",
+    "active": true,
+    "demoAccount": true,
+    "createdAt": "2026-11-20T12:32:44.068Z"
+  }
+]
